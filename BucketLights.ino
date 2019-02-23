@@ -49,18 +49,22 @@
 
 enum LightingObjects  // Pin assignments
 {
-    DRIVE_SUBSYSTEM = 3,
-    GEAR_SUBSYSTEM  = 4,
-    BALL_SUBSYSTEM  = 5,
-    CLIMB_SUBSYSTEM = 6  
+    A_STRIP = 12,
+    B_STRIP = 11,
+    C_STRIP = 10,
+    D_STRIP =  9,
+    E_STRIP =  8,
+    F_STRIP =  7,
+    G_STRIP =  6,
+    H_STRIP =  5 
 };
 
 Adafruit_NeoPixel myStrips[] =
 {
-  Adafruit_NeoPixel(16, DRIVE_SUBSYSTEM, NEO_GRB + NEO_KHZ800),
-  Adafruit_NeoPixel(16, GEAR_SUBSYSTEM,  NEO_GRB + NEO_KHZ800),
-  Adafruit_NeoPixel(16, BALL_SUBSYSTEM,  NEO_GRB + NEO_KHZ800),
-  Adafruit_NeoPixel(16, CLIMB_SUBSYSTEM, NEO_GRB + NEO_KHZ800)
+  Adafruit_NeoPixel(16, A_STRIP, NEO_GRB + NEO_KHZ800),
+  Adafruit_NeoPixel(16, B_STRIP,  NEO_GRB + NEO_KHZ800),
+  Adafruit_NeoPixel(16, C_STRIP,  NEO_GRB + NEO_KHZ800),
+  Adafruit_NeoPixel(16, D_STRIP, NEO_GRB + NEO_KHZ800)
 };
 
 BucketLight myLights(myStrips, LENGTH(myStrips));
